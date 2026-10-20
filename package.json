@@ -1,0 +1,21 @@
+{
+  "name": "sound-puzzle-hunter-g5",
+  "version": "1.0.0",
+  "description": "Sound Puzzle Hunter - Educational game for learning English through audio puzzles",
+  "private": true,
+  "scripts": {
+    "build": "echo 'No build step required for static HTML'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "educational",
+    "game",
+    "english",
+    "puzzle"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.1.1"
+  }
+}
