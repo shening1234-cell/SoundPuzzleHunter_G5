@@ -291,7 +291,7 @@ body::before{
 .cfp{position:fixed;top:-20px;pointer-events:none;z-index:999;animation:cffall linear forwards;}
 @keyframes cffall{to{transform:translateY(110vh) rotate(720deg);opacity:0;}}
 
-/* ═══════ WARN TOAST ═══════ */
+/* ═══════ WARN TOAST ═════���═ */
 #warn-toast{
   position:fixed;top:80px;left:50%;transform:translateX(-50%) scale(0);
   background:linear-gradient(135deg,#5c1414,#7a0000);
@@ -1249,6 +1249,10 @@ body::before{
 /* ════════════════════════════════════════════════════ */
 
 </style>
+<script type="module">
+  import { inject } from '/node_modules/@vercel/analytics/dist/index.js';
+  inject();
+</script>
 </head>
 <body>
 <div id="app">
@@ -3870,7 +3874,7 @@ const UNIT2_BANK = [
 
 const UNIT3_BANK = [
   { sentence:"What’s in the bathroom?", hint:"무엇이 있는지 묻는 표현이에요.", keywords:["What’s", "in", "the", "bathroom"], decoys:["There", "are", "many", "books", "living", "room", "a", "tree", "garden", "nice", "house", "The", "girl", "opens", "door", "Look"] },
-  { sentence:"There are many books in the living room.", hint:"there are로 여러 개를 나타내요.", keywords:["There", "are", "many", "books", "in", "the", "living", "room"], decoys:["What’s", "bathroom", "is", "a", "tree", "garden", "What", "nice", "house", "The", "girl", "opens", "door", "Look", "at", "my", "bedroom", "You"] },
+  { sentence:"There are many books in the living room.", hint:"there are로 여러 개를 나��내요.", keywords:["There", "are", "many", "books", "in", "the", "living", "room"], decoys:["What’s", "bathroom", "is", "a", "tree", "garden", "What", "nice", "house", "The", "girl", "opens", "door", "Look", "at", "my", "bedroom", "You"] },
   { sentence:"There is a tree in the garden.", hint:"there is로 하나를 나타내요.", keywords:["There", "is", "a", "tree", "in", "the", "garden"], decoys:["What’s", "bathroom", "are", "many", "books", "living", "room", "What", "nice", "house", "The", "girl", "opens", "door", "Look", "at", "my", "bedroom"] },
   { sentence:"What a nice house!", hint:"집을 보고 감탄해요.", keywords:["What", "a", "nice", "house"], decoys:["What’s", "in", "the", "bathroom", "There", "are", "many", "books", "living", "room", "is", "tree", "garden", "The", "girl", "opens", "door", "Look"] },
   { sentence:"The girl opens the door.", hint:"소녀가 문을 열어요.", keywords:["The", "girl", "opens", "the", "door"], decoys:["What’s", "in", "bathroom", "There", "are", "many", "books", "living", "room", "is", "a", "tree", "garden", "What", "nice", "house", "Look", "at"] },
@@ -5345,7 +5349,7 @@ function renderTrendTableTo(wrap){
     if(total===0)return'';
     const wrong=total-correct;
     const pct=Math.round((correct/total)*100);
-    // width:0%인 구간은 padding 때문에 칸이 남아 보이므로 padding도 함께 0으로 처리
+    // width:0%인 구간은 padding 때문에 칸이 남아 ��이므로 padding도 함께 0으로 처리
     const correctPad = pct===0 ? 'padding:0;' : '';
     const wrongPad = pct===100 ? 'padding:0;' : '';
     return`<div class="g-block">
